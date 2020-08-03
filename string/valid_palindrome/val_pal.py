@@ -6,13 +6,18 @@
 
 palin = 'radkar'
 
-s = 'raddar'
+s = 'A Man, a Plan, a Canal: Panama'
+
 def palindrome(s):
     x = ""
     diff = ord('a') - ord('A')
     for i in s:
-        if ord(i) >= ord('a') and ord( 
-    return s == s[::-1]
+        if ord(i) >= ord('a') and ord(i) <= ord('z') or ord(i) >= ord("0") and ord(i) <= ord("9"):
+            x += i
+        elif ord(i) >= ord('A') and ord(i) <= ord('Z'):
+            i = chr(diff+ord(i))
+            x += i
+    return x == x[::-1]
 
 print(palindrome(s))
 print(palindrome(palin))
