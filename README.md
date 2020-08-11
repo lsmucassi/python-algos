@@ -1,11 +1,9 @@
+
+
+
+
 # python-algos
-
-an implementation of algorithms in python
-
-- an attempt to solving algos problems in python : a learning journey
-
-# Product Name
-> Short blurb about what your product does.
+> an implementation of algorithms in python - an attempt to solving algos problems in python : a learning journey
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -13,7 +11,7 @@ an implementation of algorithms in python
 
 One to two paragraph statement about your product and what it does.
 
-![](header.png)
+![](python_algos.png)
 
 ## Installation
 
