@@ -17,5 +17,6 @@ python3 algos.py
 
 ## Development setup
 
-> Make you have python installed and you have your fav IDE or Text Editor
+> Make sure you have python 3 or latest installed on your working evironment and you have your fav IDE or Text Editor
 - python 3^
+- IDE / Text Editor
