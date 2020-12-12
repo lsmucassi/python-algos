@@ -9,6 +9,7 @@ n:      1, 2, 3, 4, 5, 6, 7, 8, 9 ....
 fib:    1, 1, 2, 3, 5, 8, 13, 21, 34
 '''
 
+# memorization
 def fib(n, memo={}):
     if n in memo:
         return memo[n]
