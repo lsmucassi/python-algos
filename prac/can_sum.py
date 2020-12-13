@@ -13,16 +13,21 @@ can_sun(7, [5, 3, 4, 7]) --> True: 7 can be returned as is already a member and 
 can_sum(7, [2, 4]) --> False: no combination can sum to 7 from the given list
 '''
 
-def can_sum(target_sum, numbers, memo):
+def can_sum(target_sum, numbers, memo={}):
+    if target_sum in memo: return memo[target_sum]
     if target_sum == 0: return True
     if target_sum < 0: return False
 
     for num in numbers:
         remainder = target_sum - num
-        if can_sum(remainder, numbers) == True:
+        if can_sum(remainder, numbers, memo) == True:
+            memo[target_sum] = True
             return True
+        else:
+            memo[target_sum] = False
+            return False
 
-    return False
+    # return memo[target_sum]
 
 
 print(can_sum(7, [2, 3]))
